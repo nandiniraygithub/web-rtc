@@ -1,0 +1,186 @@
+.home-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.home-card {
+  background: white;
+  padding: 3rem;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+}
+
+.home-card h1 {
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+}
+
+.home-card p {
+  color: #666;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: #667eea;
+  color: white;
+}
+
+.btn-primary:hover {
+  background: #5a67d8;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background: #48bb78;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background: #38a169;
+  transform: translateY(-2px);
+}
+
+.divider {
+  color: #999;
+  font-weight: 500;
+}
+
+.join-section {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.room-input {
+  flex: 1;
+  padding: 1rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.room-input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+.share-section {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 2px solid #e2e8f0;
+}
+
+.share-section h3 {
+  color: #333;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+}
+
+.meeting-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.room-code-display {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #f7fafc;
+  padding: 1rem;
+  border-radius: 10px;
+  border: 2px solid #e2e8f0;
+}
+
+.code-label {
+  font-weight: 600;
+  color: #4a5568;
+}
+
+.code-value {
+  font-family: 'Courier New', monospace;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #667eea;
+  letter-spacing: 2px;
+}
+
+.copy-btn {
+  background: #667eea;
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.copy-btn:hover {
+  background: #5a67d8;
+}
+
+.meeting-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.link-label {
+  font-weight: 600;
+  color: #4a5568;
+  white-space: nowrap;
+}
+
+.link-input {
+  flex: 1;
+  padding: 0.5rem;
+  border: 2px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  background: #f7fafc;
+  color: #4a5568;
+}
+
+.success-message {
+  margin-top: 1rem;
+  padding: 0.75rem;
+  background: #48bb78;
+  color: white;
+  border-radius: 8px;
+  font-weight: 600;
+  animation: fadeInOut 2s ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; transform: translateY(-10px); }
+  20% { opacity: 1; transform: translateY(0); }
+  80% { opacity: 1; transform: translateY(0); }
+  100% { opacity: 0; transform: translateY(-10px); }
+}
