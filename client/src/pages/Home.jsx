@@ -3,12 +3,15 @@ import { useNavigate } from 'react-router-dom'
 import './Home.css'
 
 function Home() {
+  console.log('🏠 Home component rendering...')
+  
   const [roomId, setRoomId] = useState('')
   const [createdRoomId, setCreatedRoomId] = useState('')
   const [showShareSuccess, setShowShareSuccess] = useState(false)
   const navigate = useNavigate()
 
   const createRoom = () => {
+    console.log('🚀 Creating room...')
     const newRoomId = Math.random().toString(36).substring(2, 9)
     setCreatedRoomId(newRoomId)
     navigate(`/room/${newRoomId}`)
