@@ -1,0 +1,16 @@
+{
+  "name": "video-meet-app",
+  "version": "1.0.0",
+  "description": "Google Meet-like video calling application",
+  "scripts": {
+    "dev": "concurrently \"cd server && node server.js\" \"cd client && npm run dev\"",
+    "build": "cd client && npm run build",
+    "start": "cd server && node server.js"
+  },
+  "keywords": ["video", "webrtc", "socket.io", "react", "video-calling"],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
