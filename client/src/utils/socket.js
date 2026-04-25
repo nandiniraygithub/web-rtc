@@ -6,8 +6,9 @@ const getSocketUrl = () => {
     return 'http://localhost:5000'
   }
   
-  // For Vercel deployment, use the same origin with API path
-  return `${window.location.origin}/api/socket`
+  // For Netlify frontend + Vercel backend deployment
+  // Your actual Vercel server URL
+  return 'https://web-jnfrvpjc8-nandiniraygithubs-projects.vercel.app/api/socket'
 }
 
 const socket = io(getSocketUrl(), {
